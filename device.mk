@@ -67,5 +67,9 @@ TARGET_DISABLE_MIMOJI_FILES := true
 PRODUCT_TARGET_VNDK_VERSION := 30
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
 
+# Updater
+PRODUCT_PACKAGES += \
+    Updater
+
 # Inherit from sm6150-common
 $(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)

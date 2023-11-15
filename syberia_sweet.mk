@@ -6,11 +6,15 @@
 
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Syberia stuff.
+$(call inherit-product, vendor/syberia/common.mk)
+SYBERIA_BUILD_TYPE := OFFICIAL
+TARGET_BOOT_ANIMATION_RES := 1080
+WITH_GMS=true
+TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_sweet
+PRODUCT_NAME := syberia_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 10 Pro
